@@ -10,7 +10,6 @@ let localData = JSON.parse(window.localStorage.getItem("data"));
 
 const setLocalData = (key, value) => {
      let data = JSON.parse(window.localStorage.getItem("data")) ?? { content: "Write something and save it in your local storage..!", dark: false };
-     console.log(data)
      data[key] = value;
      window.localStorage.setItem("data", JSON.stringify(data));
 }
@@ -22,7 +21,6 @@ const deleteLocalData = (key) => {
 }
 
 const setTextFieldData = () => {
-     console.log(window.localStorage.getItem("data"));
      let data = JSON.parse(window.localStorage.getItem("data")) ?? { content: "Write something and save it in your local storage..!", dark: false };
      textContent.value = data.content ?? "Write something and save it in your local storage..!";
 }
