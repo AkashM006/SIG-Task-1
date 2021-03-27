@@ -43,6 +43,10 @@ a{
      text-decoration: none;
 }
 
+a:focus,a:active{
+     outline: none;
+}
+
 .hero{
      width: 97%;
      max-width: 1400px;
@@ -156,10 +160,6 @@ img{
 
 i{
      color: var(--clr-white);
-}
-
-a:focus,a:active{
-     outline: none;
 }
 
 @media(max-width:400px){
