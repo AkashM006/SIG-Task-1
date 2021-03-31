@@ -1,0 +1,3 @@
+Changes made in this version:
+
+1) 28/03/2021 - Sunday - Removed margin and padding-block and -inline to support the site on safari browser.
