@@ -84,7 +84,6 @@ a:focus,a:active{
      font-weight: 900;
      background-color: var(--clr-primary);
      padding: 0.75em 1em;
-     margin: 0.15em;
 }
 
 .btn:hover{
@@ -245,6 +244,11 @@ a:hover{
 }
 
 @media(max-width:400px){
+
+     .btn-grp + .btn-grp {
+          margin-top: 0.5em;
+     }
+
      .hero__details{
           flex-direction: column;
      }
