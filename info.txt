@@ -1,3 +1,7 @@
 Changes made in this version:
 
-1) 28/03/2021 - Sunday - Removed margin and padding-block and -inline to support the site on safari browser.
+1) Removed margin and padding-block and -inline to support the site on safari browser.
+
+2) Added Intersection observer to make some animations.
+
+3) Implemented native lazy loading.
