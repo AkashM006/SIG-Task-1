@@ -42,4 +42,4 @@ let timer = setInterval(() => {
      removeClass();
      goRight();
      addClass();
-}, 7500)
+}, 10000)
