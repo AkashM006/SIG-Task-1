@@ -16,18 +16,30 @@ const goLeft = () => {
           currentSlide--;
 }
 
-left.addEventListener("click", (event) => {
+const removeClass = () => {
      slides[currentSlide].classList.remove("active");
      indicators[currentSlide].classList.remove("indicator__active");
-     goLeft();
+}
+
+const addClass = () => {
      slides[currentSlide].classList.add("active");
      indicators[currentSlide].classList.add("indicator__active");
+}
+
+left.addEventListener("click", (event) => {
+     removeClass();
+     goLeft();
+     addClass();
 })
 
 right.addEventListener("click", (event) => {
-     slides[currentSlide].classList.remove("active");
-     indicators[currentSlide].classList.remove("indicator__active");
+     removeClass();
      goRight();
-     slides[currentSlide].classList.add("active");
-     indicators[currentSlide].classList.add("indicator__active");
+     addClass();
 })
+
+let timer = setInterval(() => {
+     removeClass();
+     goRight();
+     addClass();
+}, 7500)

@@ -67,11 +67,15 @@ const showModal = (text) => {
      setModalContent(text)
      modal.style.display = "block";
      modal.style.opacity = "100";
+     document.body.style.height = "100%";
+     document.body.style.overflow = 'hidden';
 }
 
 const closeModal = () => {
      modal.style.display = "none"
      overlay.style.display = "none"
+     document.body.style.height = "auto";
+     document.body.style.overflow = 'auto';
 }
 
 
