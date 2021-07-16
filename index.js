@@ -101,10 +101,6 @@ closeModalButton.addEventListener("click", () => {
      closeModal();
 })
 
-// overlay.addEventListener("click", () => {
-//      closeModal();
-// })
-
 toggleTheme.addEventListener("click", toggler);
 
 toggleSub.addEventListener("click", toggler);
