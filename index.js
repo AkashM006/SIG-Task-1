@@ -13,6 +13,7 @@ const modal = document.querySelector("#my-modal");
 const closeModalButton = document.querySelector(".close-icon");
 const overlay = document.querySelector(".overlay");
 const modalContent = document.querySelector(".modal-content");
+const modalButton = document.querySelector(".modal__btn");
 
 const toggler = () => {
      let data = JSON.parse(window.localStorage.getItem("data")) ?? { dark: false };
@@ -78,6 +79,9 @@ const closeModal = () => {
      document.body.style.overflow = 'auto';
 }
 
+modalButton.addEventListener("click", (event) => {
+     closeModal();
+})
 
 avoidRefresh.forEach(aButton => {
      aButton.addEventListener("click", (event) => {
