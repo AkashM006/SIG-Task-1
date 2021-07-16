@@ -60,6 +60,14 @@ a:focus,a:active{
      outline: none;
 }
 
+.nav__right{
+     display: flex;
+}
+
+.nav__right > a {
+     margin-right: 0.25em;
+}
+
 .hero{
      width: 97%;
      max-width: 1400px;
@@ -91,8 +99,8 @@ a:focus,a:active{
 }
 
 i:hover,i:focus{
-     transition-duration: 750ms;
      transform: rotate(360deg);
+     transition-duration: 750ms;
      transition-timing-function: cubic-bezier(.18,.89,.32,1.28);
 }
 
@@ -153,7 +161,7 @@ i:hover,i:focus{
      padding: 2em;
 }
 
-img{
+.policy__logo{
      margin-top:2em;
      margin-bottom: 2.5em;
      color: var(--accent-dark);
@@ -162,7 +170,6 @@ img{
 }
 
 .code-dp{
-     /* transition-duration: 350ms; */
      border: none;
      display: block;
      width: 100%;
@@ -204,14 +211,14 @@ i{
 
 .opt-toggle{
      visibility: hidden;
-     z-index: 1;
+     z-index: 99;
      position: fixed;
      bottom: 1em;
      right: 1em;
 }
 
 .go-up{
-     z-index: 1;
+     z-index: 99;
      visibility: hidden;
      position: fixed;
      bottom: 1em;
@@ -241,6 +248,46 @@ a:hover{
 .policy__undo {
      opacity: 1;
      transform: translateY(0);
+}
+
+.modal {
+     display: none;
+     position: fixed;
+     z-index: 1000;
+     top: 40%;
+     left: 35%;
+     right: 35%;
+     background-color: var(--clr-secondary);
+     border-radius: 10px;
+     padding: 1em;
+}
+
+.close {
+     display: flex;
+     justify-content: flex-end;
+     color: var(--clr-secondary-shade-dark);
+     height: 3px;
+}
+
+.close-icon:hover {
+     cursor: pointer;
+     color: var(--clr-secondary-shade-dark);
+}
+
+.modal-active {
+     opacity: 0.5;
+}
+
+.overlay{
+     position: fixed;
+     top: 0;
+     left: 0;
+     height: 100vh;
+     width: 100vw;
+     background-color: var(--clr-secondary-shade-dark);
+     opacity: 0.2;
+     display: none;
+     z-index: 100;
 }
 
 @media(max-width:400px){

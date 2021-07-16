@@ -6,12 +6,14 @@
      <meta http-equiv="X-UA-Compatible" content="IE=edge">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <title>HTML Tables</title>
-     <link rel="stylesheet" href="styles.min.css">
+     <link rel="stylesheet" href="styles.css">
 
      <script src="https://use.fontawesome.com/d7d65787c0.js"></script>
 
      <link rel="preconnect" href="https://fonts.gstatic.com">
      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+     <link rel="stylesheet" href="carousel.css">
 </head>
 
 <body>
@@ -20,7 +22,7 @@
           <div class="hero__nav container">
                <a class="btn" href="">❮ Previous</a>
                <div class="nav__right">
-                    <a class="btn toggle" href=""><i id="icon" class="fa fa-sun-o" aria-hidden="true"></i></a>
+                    <a class="btn toggle" href=""><i id="icon" class="fa fa-sun-o " aria-hidden="true"></i></a>
                     <a class="btn" href="">Next ❯</a>
                </div>
           </div>
@@ -38,10 +40,10 @@
                </div>
           </div>
           <div class="hero__footer">
-               <a class="btn-secondary" href="">report error</a>
-               <a class="btn-secondary" href="">forum</a>
-               <a class="btn-secondary" href="">about</a>
-               <a class="btn-secondary" href="">shop</a>
+               <a class="btn-secondary">report error</a>
+               <a class="btn-secondary">forum</a>
+               <a class="btn-secondary">about</a>
+               <a class="btn-secondary">shop</a>
           </div>
           <div class="hero__details">
                <div class="sub-section">
@@ -105,20 +107,76 @@
                     <a>XML Course</a>
                </div>
           </div>
-          <div class="hero__policy policy__fade container">
-               <p>W3Schools is optimized for learning and training. Examples might be simplified to improve reading
-                    and learning. Tutorials, references, and examples are constantly reviewed to avoid errors, but we
-                    cannot warrant full correctness of all content. While using W3Schools, you agree to have read and
-                    accepted our terms of use, cookie and privacy policy.</p>
-               <p>Copyright 1999-2021 by Refsnes Data. All Rights Reserved.
-                    W3Schools is Powered by W3.CSS.</p>
-               <img loading="lazy" src="https://www.w3schools.com/images/w3schoolscom_gray.gif" alt="w3Schools">
+          <div class="carousel-section">
+               <div class="carousel">
+                    <div class="carousel__left">
+                         <i class="fa fa-chevron-left" aria-hidden="true"></i>
+                    </div>
+                    <div class="carousel__images">
+                         <div class="carousel__gradient"></div>
+                         <div class="img__container active">
+                              <div class="wrapper">
+                                   <img loading="lazy" class="carousel__img" src="img1.jpg" alt="Image 1">
+                                   <h3 class="carousel__img__subtitle active-sub">This is subtitle for image 1</h3>
+                              </div>
+                         </div>
+
+                         <div class="img__container">
+                              <div class="wrapper">
+                                   <img loading="lazy" class="carousel__img" src="img2.jpg" alt="Image 2">
+                                   <h3 class="carousel__img__subtitle">This is subtitle for image 2</h3>
+                              </div>
+                         </div>
+                         <div class="img__container">
+                              <div class="wrapper">
+                                   <img loading="lazy" class="carousel__img" src="img3.jpg" alt="Image 3">
+                                   <h3 class="carousel__img__subtitle">This is subtitle for image 3</h3>
+                              </div>
+                         </div>
+                         <div class="carousel__nav">
+                              <button class="carousel__indicator indicator__active"></button>
+                              <button class="carousel__indicator"></button>
+                              <button class="carousel__indicator"></button>
+                         </div>
+                    </div>
+                    <div class="carousel__right">
+                         <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                    </div>
+               </div>
           </div>
+     </div>
+
+     <div class="hero__policy policy__fade container">
+          <p>W3Schools is optimized for learning and training. Examples might be simplified to improve reading
+               and learning. Tutorials, references, and examples are constantly reviewed to avoid errors, but
+               we
+               cannot warrant full correctness of all content. While using W3Schools, you agree to have read
+               and
+               accepted our terms of use, cookie and privacy policy.</p>
+          <p>Copyright 1999-2021 by Refsnes Data. All Rights Reserved.
+               W3Schools is Powered by W3.CSS.</p>
+          <img class="policy__logo" loading="lazy" src="https://www.w3schools.com/images/w3schoolscom_gray.gif"
+               alt="w3Schools">
+     </div>
      </div>
      <a class="btn opt-toggle"><i class="icon-dp fa fa-sun-o" aria-hidden="true"></i></a>
      <a class="btn go-up"><i class="fa fa-angle-up" aria-hidden="true"></i></a>
+
+     <div class="overlay"></div>
+
+     <div class="modal" id="my-modal">
+          <div class="close">
+               <div class="close-icon">&times;</div>
+          </div>
+          <div class="modal-body">
+               <h3 class="modal-content">Display your contents here</h3>
+          </div>
+     </div>
+
+     <!-- Scripts Below here -->
      <script src="index.js"></script>
      <script src="observer.js"></script>
+     <script src="carousel.js"></script>
      <noscript>
           <h1>Please Enable javascript for added features</h1>
      </noscript>
