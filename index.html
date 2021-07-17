@@ -6,14 +6,14 @@
      <meta http-equiv="X-UA-Compatible" content="IE=edge">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <title>HTML Tables</title>
-     <link rel="stylesheet" href="styles.min.css">
+     <link rel="stylesheet" href="styles.css">
 
      <script src="https://use.fontawesome.com/d7d65787c0.js"></script>
 
      <link rel="preconnect" href="https://fonts.gstatic.com">
      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
 
-     <link rel="stylesheet" href="carousel.min.css">
+     <link rel="stylesheet" href="carousel.css">
 </head>
 
 <body>
@@ -162,15 +162,20 @@
      <a class="btn opt-toggle"><i class="icon-dp fa fa-sun-o" aria-hidden="true"></i></a>
      <a class="btn go-up"><i class="fa fa-angle-up" aria-hidden="true"></i></a>
 
-     <div class="overlay"></div>
+     <!-- <div class="overlay"></div> -->
 
-     <div class="modal" id="my-modal">
-          <div class="close">
-               <div class="close-icon">&times;</div>
-          </div>
-          <div class="modal-body">
-               <h3 class="modal-content">Display your contents here</h3>
-               <a class="btn modal__btn" href="">Ok</a>
+     <div class="modal__wrapper">
+          <div class="modal" id="my-modal">
+               <div class="close__wrapper">
+                    <div class="close">
+                         <div class="close-icon">&times;</div>
+                    </div>
+               </div>
+               <div class="modal-body">
+                    <h5 class="modal-content">Display your contents here</h5>
+                    <a class="btn modal__btn" href="">Undo</a>
+               </div>
+               <div class="modal__timer"></div>
           </div>
      </div>
 

@@ -38,7 +38,7 @@ right.addEventListener("click", (event) => {
      addClass();
 })
 
-let timer = setInterval(() => {
+let timerCarousel = setInterval(() => {
      removeClass();
      goRight();
      addClass();

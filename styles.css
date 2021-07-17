@@ -251,31 +251,85 @@ a:hover{
 }
 
 .modal {
-     display: none;
+     /* display: none; */
+     /* top: 40%;
+     left: 35%;
+     right: 35%; */
+     /* position: fixed;
+     z-index: 1000;
+     bottom: 1.75%;
+     left: 1%;
+     background-color: var(--clr-secondary);
+     border-radius: 7px;
+     padding: 0.5em;
+     visibility: hidden; */
+     position: relative;
+     padding: 0.5em;
+}
+
+.modal__btn{
+     /* display: inline; */
+     align-self: center;
+     padding: 0.5em;
+     font-size: 1rem;
+     margin-left: 2em;
+     margin-right: 1em;
+}
+
+.modal__timer{
+     margin: 0;
+     position: absolute;
+     background-color: var(--clr-primary);
+     left: 0;
+     height: 3px;
+     width: 100%;
+}
+
+.modal__wrapper{
      position: fixed;
      z-index: 1000;
-     top: 40%;
-     left: 35%;
-     right: 35%;
+     bottom: 2.5%;
+     left: 1%;
      background-color: var(--clr-secondary);
-     border-radius: 10px;
-     padding: 1em;
+     border-radius: 7px;
+     visibility: hidden;
 }
 
 .close {
-     display: flex;
+     display: none;
      justify-content: flex-end;
      color: var(--clr-secondary-shade-dark);
-     height: 3px;
+     height: 2px;
+}
+
+.close__wrapper{
+     display: block;
 }
 
 .close-icon:hover {
      cursor: pointer;
-     color: var(--clr-secondary-shade-dark);
+     color: gray;
 }
 
 .modal-active {
-     opacity: 0.5;
+     animation: modalshow 7s;
+     visibility: hidden;
+}
+
+.modal-content{
+     letter-spacing: 0.125em;
+}
+
+.timer-active{
+     animation: timer 7s linear;
+}
+
+.modal__inactive{
+     animation: modalclose 1.25s linear;
+}
+
+.modal-body{
+     display: flex;
 }
 
 .overlay{
@@ -288,6 +342,52 @@ a:hover{
      opacity: 0.5;
      display: none;
      z-index: 100;
+}
+
+@keyframes modalclose{
+     0%{
+          visibility: visible;
+     }
+     40%{
+          left: 1%;
+     }
+     70%{
+          visibility: hidden;
+     }
+     100%{
+          left: -100%;
+     }
+}
+
+@keyframes timer{
+     0%{
+          width:100%;
+     }
+     87.5%{
+          width: 0;
+     }
+}
+
+@keyframes modalshow{
+     0%{
+          left: -100%;
+     }
+     10%{
+          left: 3.5%;
+     }
+     15%{
+          left: 1%;
+     }
+     85%{
+          left: 1%;
+          visibility: visible;
+     }
+     90%{
+          visibility: hidden;
+     }
+     100%{
+          left: -100%;
+     }
 }
 
 @media(max-width:400px){
