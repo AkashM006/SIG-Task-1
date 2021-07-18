@@ -3,8 +3,8 @@ This repository was created to showcase my web development and git skills ( whoo
 
 Clone of a w3Schools's single page.
 
-Master branch has all the boilerplate.
+Master branch has optimum features in it.
 
-Other branches have extra-features.
+All the other branches have beta features included and will be further merged with the master.
 
 Visit the website here : https://akashm006.github.io/SIG-Task-1/
