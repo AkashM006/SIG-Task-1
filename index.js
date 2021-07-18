@@ -124,7 +124,6 @@ avoidRefresh.forEach(aButton => {
      })
 });
 
-console.log(saveButton);
 saveButton.addEventListener("click", () => {
      let text = textContent.value;
      setLocalData("content", text);
