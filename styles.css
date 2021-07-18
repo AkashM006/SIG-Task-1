@@ -299,4 +299,13 @@ a:hover{
      .hero__details{
           flex-direction: column;
      }
+
+     .modal{
+          top: 50%;
+          left: 50%;
+          right: auto;
+          width: 55%;
+          transform: translate(-50%,-50%);
+          padding: 1em;
+     }
 }
