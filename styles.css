@@ -313,7 +313,7 @@ a:hover{
 
 .modal-active {
      animation: modalshow 7s;
-     visibility: hidden;
+     /* visibility: hidden; */
 }
 
 .modal-content{
@@ -370,14 +370,14 @@ a:hover{
 
 @keyframes modalshow{
      0%{
+          visibility: visible;
           left: -100%;
      }
-     15%{
+     10%{
           left: 1%;
      }
      85%{
           left: 1%;
-          visibility: visible;
      }
      90%{
           visibility: hidden;
