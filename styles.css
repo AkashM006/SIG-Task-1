@@ -371,19 +371,24 @@ a:hover{
 @keyframes modalshow{
      0%{
           visibility: visible;
-          left: -100%;
+          left: 1%;
+          /* left: -100%; */
+          bottom: -100%;
      }
      10%{
-          left: 1%;
+          bottom: 2.5%;
+          /* left: 1%; */
      }
      85%{
-          left: 1%;
+          bottom: 2.5%;
+          /* left: 1%; */
      }
      90%{
           visibility: hidden;
      }
      100%{
-          left: -100%;
+          bottom: -100%;
+          /* left: -100%; */
      }
 }
 
