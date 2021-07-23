@@ -116,20 +116,29 @@
                          <div class="carousel__gradient"></div>
                          <div class="img__container active">
                               <div class="wrapper">
-                                   <img loading="lazy" class="carousel__img" src="img1.jpg" alt="Image 1">
+                                   <picture>
+                                        <source media="(max-width:420px)" srcset="img1-small.jpg">
+                                        <img loading="lazy" class="carousel__img" src="img1.jpg" alt="Image 1">
+                                   </picture>
                                    <h3 class="carousel__img__subtitle active-sub">This is subtitle for image 1</h3>
                               </div>
                          </div>
 
                          <div class="img__container">
                               <div class="wrapper">
-                                   <img loading="lazy" class="carousel__img" src="img2.jpg" alt="Image 2">
+                                   <picture>
+                                        <source media="(max-width:420px)" srcset="img2-small.jpg">
+                                        <img loading="lazy" class="carousel__img" src="img2.jpg" alt="Image 2">
+                                   </picture>
                                    <h3 class="carousel__img__subtitle">This is subtitle for image 2</h3>
                               </div>
                          </div>
                          <div class="img__container">
                               <div class="wrapper">
-                                   <img loading="lazy" class="carousel__img" src="img3.jpg" alt="Image 3">
+                                   <picture>
+                                        <source media="(max-width:420px)" srcset="img3-small.jpg">
+                                        <img loading="lazy" class="carousel__img" src="img3.jpg" alt="Image 3">
+                                   </picture>
                                    <h3 class="carousel__img__subtitle">This is subtitle for image 3</h3>
                               </div>
                          </div>

@@ -325,7 +325,7 @@ a:hover{
 }
 
 .modal__inactive{
-     animation: modalclose 1.25s linear;
+     animation: modalclose 1s linear;
 }
 
 .modal-body{
@@ -350,12 +350,16 @@ a:hover{
      }
      40%{
           left: 1%;
+          bottom: 2.5%;
      }
-     70%{
+     60%{
+          bottom: 2.5%;
+     }
+     65%{
           visibility: hidden;
      }
      100%{
-          left: -100%;
+          bottom: -100%;
      }
 }
 
@@ -372,23 +376,19 @@ a:hover{
      0%{
           visibility: visible;
           left: 1%;
-          /* left: -100%; */
           bottom: -100%;
      }
      10%{
           bottom: 2.5%;
-          /* left: 1%; */
      }
      85%{
           bottom: 2.5%;
-          /* left: 1%; */
      }
      90%{
           visibility: hidden;
      }
      100%{
           bottom: -100%;
-          /* left: -100%; */
      }
 }
 
