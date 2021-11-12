@@ -1,5 +1,5 @@
 # SIG-Task-1
-This repository was created to showcase my web development and git skills ( whoops! only web development ).
+This repository was created to showcase my web development and git skills.
 
 Clone of a w3Schools's single page.
 
